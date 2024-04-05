@@ -17,7 +17,7 @@ Digite um número:
 
 Dica: Lembre do comando de resto da divisão inteira!
 """
-numero_digitado = input('Digite seu número:')
+numero_digitado = input('Digite um número:')
 numero = int(numero_digitado)
 divisao = numero%2
 
