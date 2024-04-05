@@ -55,3 +55,17 @@ Resposta:
 Não
 
 """
+
+cromossomo = input('Digite o cromossomo:')
+posição = int(input('Digite a posição:')) 
+genoma = input('Digite o genoma de referência:') 
+brca = 'chr17'
+genoma_refA = 'hg19'
+genoma_refB = 'hg38'
+
+if (cromossomo == brca) and (genoma == genoma_refA) and (posição >=41196312 <= 41277500):
+    print('Resposta: Sim')
+elif  (cromossomo == brca) and (genoma == genoma_refB) and (posição >= 43044295 <= 43125483):   
+    print('Resposta: Sim')
+else:
+    print('Resposta: Não')
