@@ -46,7 +46,7 @@ resposta = 'Resposta:'
 
 
 if (cromossomo == brca) and (posição >= 41196312 <= 41277500):
- print(resposta,'Sim')  
+ print('Resposta:','Sim')  
 else:
- print(resposta,'Não')     
+ print('Resposta:','Não')     
 
