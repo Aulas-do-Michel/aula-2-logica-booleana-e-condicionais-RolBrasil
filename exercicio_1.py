@@ -17,3 +17,12 @@ Digite um número:
 
 Dica: Lembre do comando de resto da divisão inteira!
 """
+numero_digitado = input('Digite seu número:')
+numero = int(numero_digitado)
+divisao = numero%2
+
+if (divisao == 1):
+ print('Ímpar')
+else:
+ print('Par')    
+ 
