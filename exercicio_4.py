@@ -53,19 +53,22 @@ Resposta:
 Não temos essa moeda em caixa.
 """
 
-país = input('Qual país você vai viajar?') 
-reais = float(input('Quantos reais você quer converter?'))
-usd = reais/5
-ars = reais*180
-jpy = reais*30
+def casa_de_cambio():
+    moedas = {"Estados Unidos": "USD", "Argentina": "ARS", "Japão": "JPY"}
+    destino = input("Para onde você vai viajar? ")
 
-if (país == 'Estados Unidos'):
-    print(usd,' ', 'USD')
-elif (país == 'Argentina'):
-    print(ars,' ', 'ARS')   
-elif (país == 'Japão'):
-    print(jpy,' ', 'JPY')
-else:    
-    print('Não temos essa moeda em caixa.')
+    if destino in moedas:
+        valor_em_reais = float(input("Quantos reais você vai converter? "))
+        if destino == "Estados Unidos":
+            valor_convertido = valor_em_reais / 5
+        elif destino == "Argentina":
+            valor_convertido = valor_em_reais * 180
+        else:  # Japão
+            valor_convertido = valor_em_reais * 30
 
+        print(f"{valor_convertido:.2f} {moedas[destino]}")
+    else:
+        print("Não temos essa moeda em caixa.")
+
+casa_de_cambio()
 
